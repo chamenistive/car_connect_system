@@ -11,4 +11,8 @@ public class User implements Observer {
     public void update(String message) {
         System.out.println(name + " received update: " + message);
     }
+
+    // public static Object withDefaultPasswordEncoder() {
+    //     throw new UnsupportedOperationException("Unimplemented method 'withDefaultPasswordEncoder'");
+    // }
 }

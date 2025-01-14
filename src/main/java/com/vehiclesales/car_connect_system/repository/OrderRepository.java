@@ -1,11 +1,10 @@
 package com.vehiclesales.car_connect_system.repository;
 
-import com.mysql.cj.x.protobuf.MysqlxCrud.Order;
+import com.vehiclesales.car_connect_system.model.Orrder;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public class OrderRepository {
-
-    public Order save(Order order) {
-        throw new UnsupportedOperationException("Unimplemented method 'save'");
-    }
-    
+@Repository
+public interface OrderRepository extends JpaRepository<Orrder, Long> {
+    // No need to implement the save method; it's provided by JpaRepository
 }
